@@ -251,7 +251,6 @@
   position: relative;
   background: linear-gradient(90deg, #09121B -8.75%, #1A3347 50.75%, #1A3349 113.92%);
   mix-blend-mode: normal;
-  padding: 200px;
   margin-bottom: 64px;
   z-index: 0;
 }
@@ -273,9 +272,7 @@
 }
 
 .banner_description {
-  position: absolute;
-  left: 60px;
-  top: 112px;
+  padding: 102px 60px 112px;
 }
 
 .desc_header {
@@ -312,6 +309,8 @@
   padding: 16px 56px;
   border-radius: 100px;
 }
+
+/* =========BENEFITS========== */
 
 .main_benefits {
   margin: 0 24px;
@@ -362,6 +361,7 @@
 
   display: flex;
   justify-content: space-between;
+  align-items: center;
   flex: 0;
   width: 47vw;
   height: 256px;
@@ -374,7 +374,6 @@
 .card_left_side {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   margin-right: 32px;
 }
 
@@ -392,6 +391,7 @@
   font-style: normal;
   font-size: 14px;
   color: #06324F;
+  margin-top: 16px;
 }
 
 .card_button {
@@ -402,6 +402,7 @@
   font-size: 14px;
   color: #0B8F91;
 
+  margin-top: 36px;
   padding: 12px 43px;
   width: 245px;
   text-align: center;
@@ -422,6 +423,8 @@
 
 .room_card {
   background-color: #ffffff;
+  max-width: 330px;
+  
 }
 
 .room_card_container {
@@ -461,7 +464,7 @@
 }
 
 .room_services {
-  height: 136px;
+  height: 126px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -470,6 +473,7 @@
 .room_service {
   list-style-type: none;
   margin-bottom: 16px;
+  display: flex;
 }
 
 .room_service_name {
@@ -477,8 +481,10 @@
   font-weight: 400;
   font-style: normal;
   font-size: 13px;
-  line-height: 16px;
+  line-height: 18px;
+  text-align: center;
   color: #06324F;
+  margin-left: 8px;
 }
 
 .room_price_container {
@@ -536,8 +542,160 @@
   color: #06324F;
 }
 
+/* ==========REVIEW========== */
+
+.review {
+  margin: 0 24px 112px;
+}
+
+.review_container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.review_card {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 24px;
+  border-radius: 5px;
+  width: 324px;
+}
+
+.review_header {
+  font-family: 'FiraSans', Arial, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 17px;
+  color: #06324F;
+  margin-bottom: 16px;
+}
+
+.review_text {
+  font-family: 'FiraSans', Arial, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: #06324F;
+  margin-bottom: 24px;
+}
+
+.review_full_button {
+  text-decoration: none;
+  font-family: 'FiraSans', Arial, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 13px;
+  color: #0B8F91;
+
+  padding: 12px 43px;
+  width: 130px;
+  text-align: center;
+  background-color: rgba(252, 252, 253, 2.25);
+  border-radius: 100px;
+  align-self: flex-end;
+}
+
+/* ========PANEL========= */
+
+.panel {
+  background-color: #06324F;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 112px;
+}
+
+.panel_svg {
+  margin-right: 224px;
+}
+
+/* =========NEWS_BLOG========= */
+
+.news_blog {
+  margin: 0 24px 112px;
+}
+
+.nb_container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nb_card {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  border-radius: 5px;
+  padding: 32px;
+  width: 680px;
+}
+
+.nb_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nb_head {
+  font-family: 'FiraSans', Arial, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 24px;
+  color: #06324F;
+}
+
+.nb_date {
+  font-family: 'FiraSans', Arial, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 11px;
+  line-height: 16px;
+  color: #06324F;
+}
+
+.nb_category {
+  font-family: 'FiraSans', Arial, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 11px;
+  line-height: 16px;
+  color: #06324F;
+}
+
+.nb_description {
+  font-family: 'FiraSans', Arial, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: #06324F;
+  margin-top: 16px;
+}
+
+.nb_button {
+  text-decoration: none;
+  font-family: 'FiraSans', Arial, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 13px;
+  color: #0B8F91;
+
+  padding: 12px 43px;
+  margin-top: 48px;
+  width: 130px;
+  text-align: center;
+  background-color: rgba(252, 252, 253, 2.25);
+  border-radius: 100px;
+  align-self: flex-end;
+}
 
 /* ==========MAP========= */
+
+.map {
+  margin-bottom: 112px;
+}
 
 .map_header {
   margin-left: 24px;
@@ -545,6 +703,27 @@
 .yandex_map {
   width: 100vw;
   height: 448px;
+}
+
+/* ==========CONTACT========== */
+
+.cc_header {
+  font-family: 'FiraSans', Arial, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 24px;
+  color: #06324F;
+}
+
+.cc_description {
+  font-family: 'FiraSans', Arial, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: #06324F;
+  margin-top: 16px;
 }
 
  /* ==========FOOTER============ */
