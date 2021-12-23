@@ -319,6 +319,7 @@
 .benefits {
   background-color: #ffffff;
   padding: 35px 26px 32px;
+  border-radius: 5px;
 }
 
 .benefits_list {
@@ -358,7 +359,7 @@
 .services_card {
   background-color: #ffffff;
   padding: 32px;
-
+  border-radius: 5px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -374,7 +375,9 @@
 .card_left_side {
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
   margin-right: 32px;
+  height: 192px;
 }
 
 .card_header {
@@ -408,6 +411,8 @@
   text-align: center;
   background-color: rgba(252, 252, 253, 2.25);
   border-radius: 100px;
+  align-self: flex-start;
+  justify-self: flex-end;
 }
 
 /* =========ROOMS======== */
@@ -424,7 +429,7 @@
 .room_card {
   background-color: #ffffff;
   max-width: 330px;
-  
+  border-radius: 5px;
 }
 
 .room_card_container {
@@ -532,6 +537,7 @@
   background-color: #ffffff;
   padding: 32px 0;
   margin-top: 24px;
+  border-radius: 5px;
 
   font-family: 'FiraSans', Arial, sans-serif;
   font-weight: 700;
@@ -653,6 +659,9 @@
   font-size: 11px;
   line-height: 16px;
   color: #06324F;
+  background-color: rgba(252, 252, 253, 2.25);
+  padding: 4px 16px;
+  border-radius: 100px;
 }
 
 .nb_category {
@@ -662,6 +671,9 @@
   font-size: 11px;
   line-height: 16px;
   color: #06324F;
+  background-color: rgba(252, 252, 253, 2.25);
+  padding: 4px 26px;
+  border-radius: 100px;
 }
 
 .nb_description {
@@ -707,6 +719,18 @@
 
 /* ==========CONTACT========== */
 
+.contact {
+  margin: 0 24px;
+  padding-bottom: 112px;
+}
+
+.contact_card {
+  display: flex;
+  padding: 32px;
+  background-color: #ffffff;
+  border-radius: 5px;
+}
+
 .cc_header {
   font-family: 'FiraSans', Arial, sans-serif;
   font-weight: 500;
@@ -724,6 +748,69 @@
   line-height: 24px;
   color: #06324F;
   margin-top: 16px;
+  width: 534px;
+}
+
+.contact_form {
+  margin-top: 16px;
+}
+
+.contact_inputs {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 210px;
+}
+
+.form_field {
+  width: 312px;
+  border: 1px solid rgba(6, 50, 79, 0.07);
+  border-radius: 100px;
+  padding: 16px;
+  margin-right: 24px;
+}
+
+.form_field:nth-child(n + 2) {
+  margin-top: 16px;
+}
+
+.form_textarea {
+  resize: none;
+  width: 400px;
+  height: 179px;
+  border: 1px solid rgba(6, 50, 79, 0.07);
+  border-radius: 24px;
+  padding: 16px;
+}
+
+.submit {
+  display: flex;
+}
+
+.submit_button {
+  cursor: pointer;
+  font-family: 'FiraSans', Arial, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 17px;
+  text-decoration: none;
+  color: #ffffff;
+  border: none;
+
+  background-color: #0B8F91;
+  padding: 16px 66px;
+  border-radius: 100px;
+  margin-right: 29px;
+}
+
+.submit_confirm {
+  font-family: 'FiraSans', Arial, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 13px;
+  line-height: 24px;
+  color: #6F7583;
+  width: 392px;
 }
 
  /* ==========FOOTER============ */

@@ -363,14 +363,21 @@
       <article class="contact_card">
         <div class="contact_left_side">
           <span class="cc_header">Остались вопросы или есть предложения?</span>
-        <p class="cc_description">Напишите нам и мы обязательно расскажем о нашей рыболовной базе отдыха, услугах, ценах и с удовольствием выслушаем Вас!</p>
-        <form class="contact_form">
-          <div class="contact_inputs"></div>
-          <input type="name" name="name_field" class="form_field" placeholder="Ваше имя*" required>
-          <input type="email" name="email_field" class="form_field" placeholder="Электронная почта*" required>
-          <input type="tel" name="tel_field" class="form_field" placeholder="Телефон">
-        </form>
+          <p class="cc_description">Напишите нам и мы обязательно расскажем о нашей рыболовной базе отдыха, услугах, ценах и с удовольствием выслушаем Вас!</p>
+          <form class="contact_form">
+            <div class="contact_inputs">
+              <input type="name" name="name_field" class="form_field" placeholder="Ваше имя*" required>
+              <input type="email" name="email_field" class="form_field" placeholder="Электронная почта*" required>
+              <input type="tel" name="tel_field" class="form_field" placeholder="Телефон">
+              <textarea type="text" class="form_textarea" placeholder="Сообщение"></textarea>
+            </div>
+            <div class="submit">
+              <input type="submit" value="Отправить сообщение" class="submit_button">
+              <p class="submit_confirm">Нажимая «Отправить», вы соглашаетесь предоставить Вашу информацию в ООО “Рыбацкий стан” на обработку.</p>
+            </div>
+          </form>
         </div>
+        <img src="/svg/envelope.svg" alt="" class="contact_svg">
       </article>
     </section>
   </main>
