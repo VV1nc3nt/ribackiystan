@@ -139,8 +139,8 @@
 .top_header {
   display: flex;
   justify-content: space-between;
-  margin-left: 24px;
-  margin-right: 24px;
+  margin: 0 auto;
+  width: 1392px;
 }
 
 .logo_link {
@@ -218,7 +218,8 @@
   flex-direction: row;
   justify-content: space-between;
   list-style-type: none;
-  margin: 48px 64px 16px;
+  margin: 48px auto 16px;
+  width: 1392px;
 }
 
 .menu_link {
@@ -263,8 +264,7 @@
   left: 0;
   right: 0;
   background-image: url('../images/banner_fix.png');
-  background-size: 1440px;
-  background-position: center;
+  background-position: right center;
   background-repeat: no-repeat;
   mix-blend-mode: lighten;
   opacity: 0.85;
@@ -273,6 +273,8 @@
 
 .banner_description {
   padding: 102px 60px 112px;
+  width: 1392px;
+  margin: 0 auto;
 }
 
 .desc_header {
@@ -313,7 +315,8 @@
 /* =========BENEFITS========== */
 
 .main_benefits {
-  margin: 0 24px;
+  width: 1392px;
+  margin: 0 auto;
 }
 
 .benefits {
@@ -353,13 +356,11 @@
 .services {
   display: flex;
   flex-wrap: wrap;
-  flex-shrink: 0;
-  flex-grow: 1;
   justify-content: space-between;
   padding-left: 24px;
   padding-right: 24px;
-  margin-top: 112px;
-  margin-bottom: 112px;
+  width: 1440px;
+  margin: 112px auto;
 }
 
 .services_card {
@@ -370,7 +371,7 @@
   justify-content: space-between;
   align-items: center;
   flex: 0;
-  width: 47vw;
+  width: 680px;
   height: 256px;
 }
 
@@ -424,7 +425,8 @@
 /* =========ROOMS======== */
 
 .rooms {
-  margin: 0 24px 112px;
+  max-width: 1392px;
+  margin: 0 auto 112px;
 }
 
 .rooms_container {
@@ -434,7 +436,7 @@
 
 .room_card {
   background-color: #ffffff;
-  width: 23vw;
+  max-width: 330px;
   display: flex;
   flex-direction: column;
   align-content: center;
@@ -531,7 +533,7 @@
 
 .book_room {
   display: block;
-  width: 20vw;
+  width: 282px;
   background-color: #0B8F91;
   padding: 16px 42px;
   border-radius: 100px;
@@ -567,7 +569,8 @@
 /* ==========REVIEW========== */
 
 .review {
-  margin: 0 24px 112px;
+  width: 1392px;
+  margin: 0 auto 112px;
 }
 
 .review_container {
@@ -582,7 +585,7 @@
   justify-content: space-between;
   padding: 24px;
   border-radius: 5px;
-  width: 23vw;
+  width: 324px;
 }
 
 .review_header {
@@ -624,9 +627,17 @@
 
 .panel {
   background-color: #06324F;
+}
+
+.panel_container {  
   display: flex;
   justify-content: space-between;
-  margin-bottom: 112px;
+  width: 1392px;
+  margin: 0 auto 112px;
+}
+
+.panel_description {
+  padding: 112px 92px;
 }
 
 .panel_svg {
@@ -636,7 +647,8 @@
 /* =========NEWS_BLOG========= */
 
 .news_blog {
-  margin: 0 24px 112px;
+  width: 1392px;
+  margin: 0 auto 112px;
 }
 
 .nb_container {
@@ -650,7 +662,7 @@
   background-color: #ffffff;
   border-radius: 5px;
   padding: 32px;
-  width: 47vw;
+  width: 680px;
 }
 
 .nb_header {
@@ -736,7 +748,8 @@
 /* ==========CONTACT========== */
 
 .contact {
-  margin: 0 24px;
+  width: 1392px;
+  margin: 0 auto;
   padding-bottom: 112px;
 }
 
@@ -833,10 +846,6 @@
  /* ==========FOOTER============ */
 
 .footer {
-  /* position: fixed;
-  left:0px;
-  bottom:0px;
-  width:100%; */
   background-color: #06324F;
   padding: 48px 24px 24px;
 }
@@ -844,7 +853,8 @@
 .footer_top {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 40px;
+  width: 1392px;
+  margin: 0 auto 40px;
 }
 
 .footer_logo {
@@ -906,10 +916,15 @@
 }
 
 .copyright {
+  border-top: 1px solid rgba(32, 70, 97);
+}
+
+.copyright_container {
   display: flex;
   justify-content: space-between;
   padding-top: 24px;
-  border-top: 1px solid rgba(32, 70, 97);
+  width: 1392px;
+  margin: 0 auto;
 }
 
 .copyright_link {
