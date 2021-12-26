@@ -668,6 +668,7 @@
 .nb_card {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   background-color: #ffffff;
   border-radius: 5px;
   padding: 32px;
