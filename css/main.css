@@ -263,7 +263,8 @@
   bottom: 0;
   left: 0;
   right: 0;
-  background-image: url('../images/banner_fix.png');
+  background-image: url('../images/fish_bg_small.jpg');
+  background-size: contain;
   background-position: right center;
   background-repeat: no-repeat;
   mix-blend-mode: lighten;
@@ -271,10 +272,11 @@
   z-index: -1;
 }
 
-@media (min-width: 2048px) {
+@media (min-width: 2056px) {
   .main_top::after {
-    background-image: url('../images/fish_banner.png');
+    background-image: url('../images/fish_bg.jpg');
     background-position: right -100px center;
+    background-size: contain;
   }
 }
 
