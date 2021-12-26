@@ -140,8 +140,8 @@
 .top_header {
   display: flex;
   justify-content: space-between;
-  margin-left: 24px;
-  margin-right: 24px;
+  margin: 0 auto;
+  max-width: 1392px;
 }
 
 .logo_link {
@@ -220,6 +220,8 @@
   justify-content: space-between;
   list-style-type: none;
   margin: 48px 64px 16px;
+  margin: 48px auto 16px;
+  max-width: 1392px;
 }
 
 .menu_link {
@@ -350,7 +352,6 @@
 }
 
 
-
  /* ==========FOOTER============ */
 
  .footer {
@@ -361,7 +362,8 @@
 .footer_top {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 40px;
+  width: 1392px;
+  margin: 0 auto 40px;
 }
 
 .footer_logo {
@@ -423,10 +425,15 @@
 }
 
 .copyright {
+  border-top: 1px solid rgba(32, 70, 97);
+}
+
+.copyright_container {
   display: flex;
   justify-content: space-between;
   padding-top: 24px;
-  border-top: 1px solid rgba(32, 70, 97);
+  width: 1392px;
+  margin: 0 auto;
 }
 
 .copyright_link {
