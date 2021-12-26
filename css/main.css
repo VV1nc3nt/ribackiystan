@@ -271,6 +271,13 @@
   z-index: -1;
 }
 
+@media (min-width: 2048px) {
+  .main_top::after {
+    background-image: url('../images/fish_banner.png');
+    background-position: right -100px center;
+  }
+}
+
 .banner_description {
   padding: 102px 60px 112px;
   width: 1392px;
