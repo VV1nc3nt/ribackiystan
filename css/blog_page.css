@@ -282,6 +282,7 @@
 .article_card {
   background-color: #ffffff;
   padding: 32px;
+  border-radius: 5px;
 }
 
 .article_header {
