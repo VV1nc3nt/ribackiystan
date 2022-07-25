@@ -252,24 +252,15 @@
 }
 
 
-/* ============ABOUT_US============= */
+/* ================MENU=============== */
 
-.about_base {
-  width: 992px;
-  margin: 0 auto;
-}
-
-.about_container {
+.menu_container {
   width: 992px;
   padding: 32px;
   background-color: #ffffff;
 }
 
-.embed_doc {
-  margin-right: 32px;
-}
-
-.about_text {
+.menu_text {
   font-family: 'FiraSans', Arial, sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -279,63 +270,7 @@
   margin-bottom: 32px;
 }
 
-.about_benefits {
-  width: 992px;
-  margin: 0 auto;
-}
-
-.about_benefits_base {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin-top: 40px;
-}
-
-.about_benefit {
-  width: 480px;
-  display: flex;
-  flex-direction: column;
-}
-
-.about_benefit:nth-child(n + 3) {
-  margin-top: 40px;
-}
-
-.about_benefit_wrapper {
-  display: flex;
-  align-items: center;
-  margin-bottom: 16px;
-}
-
-.about_benefit_header {
-  font-family: 'FiraSans', Arial, sans-serif;
-  font-weight: 700;
-  font-style: normal;
-  font-size: 24px;
-  line-height: 24px;
-  color: #06324F;
-  margin-left: 16px;
-}
-
-.about_benefit_text {
-  font-family: 'FiraSans', Arial, sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 14px;
-  line-height: 24px;
-  color: #06324F;
-  text-align: justify;
-}
-
-.about_phrase {
-  width: 100vw;
-  height: 96px;
-  margin: 64px 0 0;
-  padding: 16px;
-  background-color: #ffffff;
-}
-
-.about_phrase_text {
+.menu_phrase_text {
   width: 992px;
   text-align: center;
   font-family: 'FiraSans', Arial, sans-serif;
@@ -347,41 +282,166 @@
   margin: 0 auto;
 }
 
-.about_appeal {
-  margin-top: 64px;
+.menu_base {
+  width: 992px;
+  margin: 0 auto;
+  padding-top: 40px;
+}
+
+.menu_phrase {
+  width: 100vw;
+  height: 176px;
+  margin: 64px 0 0;
+  padding: 24px;
+  background-color: #ffffff;
+}
+
+/* =======MENU_TABS======== */
+
+.menu_tabs_list {
+  width: 992px;
+  margin: 64px auto 0;
   padding-bottom: 128px;
 }
 
-.about_appeal_header {
+.menu_tabs_header {
   font-family: 'FiraSans', Arial, sans-serif;
   font-weight: 700;
   font-style: normal;
   font-size: 17px;
-  line-height: 24px;
+  line-height: 17px;
   color: #06324F;
-  margin-bottom: 16px;
 }
 
-.about_appeal_naming_text {
+.menu_tabs {
+  width: 992px;
+  margin: 16px auto 0;
+  background-color: #fff;
+  border-radius: 5px 5px 0 0;
+  padding: 16px 24px;
+}
+
+.menu_tabs>input[type="radio"] {
+  display: none;
+}
+
+.menu_tabs>input[type="radio"]:checked+label {
+  background-color: #f7f7f9;
+  opacity: 1;
+}
+
+.menu_tabs>div {
+  /* скрыть контент по умолчанию */
+  display: none;
+  /* border: 1px solid #eee; */
+  padding: 10px 15px;
+  border-radius: 4px;
+}
+
+/* отобразить контент, связанный с вабранной радиокнопкой (input type="radio") */
+#menu_tab-btn-1:checked~#menu_content-1,
+#menu_tab-btn-2:checked~#menu_content-2,
+#menu_tab-btn-3:checked~#menu_content-3,
+#menu_tab-btn-4:checked~#menu_content-4,
+#menu_tab-btn-5:checked~#menu_content-5,
+#menu_tab-btn-6:checked~#menu_content-6,
+#menu_tab-btn-7:checked~#menu_content-7 {
+  display: block;
+}
+
+.menu_tabs>label {
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  user-select: none;
+  background-color: #fff;
+  border: 1px solid transparent;
+  padding: 12px 23px;
+  font-size: 13px;
+  line-height: 1.5;
+  border-radius: 100px;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+  cursor: pointer;
+  margin-bottom: 10px;
   font-family: 'FiraSans', Arial, sans-serif;
-  font-weight: 400;
+  font-weight: 500;
   font-style: normal;
-  font-size: 14px;
-  line-height: 24px;
-  color: #06324F;
-  text-align: right;
+  line-height: 16px;
+  color: #0B8F91;
+  opacity: 0.25;
 }
 
-.about_appeal_naming_name {
+.menu_tabs>label:nth-child(n + 2) {
+  margin-left: 31px;
+}
+
+.menu_tabs>label:first-of-type {
+  margin-left: 0;
+}
+
+
+/* ===========MENU_TABLE========== */
+
+.menu_table_headers {
+  display: flex;
+  align-items: center;
+}
+
+.menu_table_header {
   font-family: 'FiraSans', Arial, sans-serif;
   font-weight: 500;
   font-style: normal;
   font-size: 14px;
+  line-height: 16px;
+  color: #06324F;
+  border: 1px solid #F2F3F7;
+  padding: 32px;
+  width: 300px;
+}
+
+.menu_table_rows {
+  display: flex;
+  align-items: center;
+}
+
+.menu_table_row {
+  font-family: 'FiraSans', Arial, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 13px;
+  line-height: 16px;
+  color: #06324F;
+  border: 1px solid #F2F3F7;
+  padding: 32px;
+  width: 300px;
+  height: 82px;
+}
+
+.menu_admin_text {
+  background-color: #fff;
+  padding: 32px;
+  border-radius: 0 0 5px 5px;
+}
+
+.menu_admin_thick {
+  font-family: 'FiraSans', Arial, sans-serif;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 13px;
   line-height: 24px;
   color: #06324F;
   text-align: right;
 }
 
+.menu_admin_fat {
+  font-family: 'FiraSans', Arial, sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 13px;
+  line-height: 16px;
+  color: #06324F;
+  text-align: right;
+}
 
 
  /* ==========FOOTER============ */
